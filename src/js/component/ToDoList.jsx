@@ -5,7 +5,8 @@ function ToDoList() {
   const [list, setList] = useState([]);
   console.log(list);
   function remove(index) {
-
+ const del = list.filter((element, i)=> index !== i)
+ setList(del)
   }
   return (
     <>
